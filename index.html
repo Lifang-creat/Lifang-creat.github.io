@@ -73,15 +73,19 @@ M3TTS
 
                   <div style="font-size:x-large">
 
-                      <div class='row text-center h5 font-weight-normal pl-0 pr-0 mb-4' style="font-size:xx-large">
-                        <p class='col text-center'>M3TTS: Multi-Modal Multi-Scale Style Control for Expressive Speech Synthesis</p>
+                      <div class='col text-center' style="font-size:xx-large">
+                        <p>M3TTS: Multi-Modal Multi-Scale Style Control for Expressive Speech Synthesis</p>
                       </div>
                       <br>
-                      <a ><span>Yan Liu,</span></a>
-                      <a><span>Li-Fang Wei,</span></a>
-                      <a><span>Xin-Yuan Qian,</span></a>
-                      <a><span>Tian-Hao Zhang,</span></a>
-                      <a><span>Xu-Chen Yin</span></a>
+                      <div class='row text-center h5 font-weight-normal pl-0 pr-0 mb-4'>
+
+                        <a><span>Yan Liu,</span></a>
+                        <a><span>Li-Fang Wei,</span></a>
+                        <a><span>Xin-Yuan Qian,</span></a>
+                        <a><span>Tian-Hao Zhang,</span></a>
+                        <a><span>Xu-Chen Yin</span></a>
+  
+                      </div>
                       <!-- <a href="https://people.csail.mit.edu/yuewang/">Yue Wang</a><sup>2</sup>, <a href="https://scholar.google.com.hk/citations?user=nUyTDosAAAAJ&hl=en/">Yilun Wang</a><sup>3</sup>, <a href="http://people.csail.mit.edu/hangzhao/">Hang Zhao</a><sup>1</sup> -->
                       <br>
                       <br>
@@ -235,13 +239,13 @@ Given a sentence and a corresponding video clip (without audio), the goal of aut
                 <div class="markdown has-text-centered">
 
                   <div align="left" style="font-size:20px; text-align:justify">
-                    " Dubbing refers to the procedure of recording characters by professional voice actors in film, animation, and games. 
+                            Dubbing refers to the procedure of recording characters by professional voice actors in film, animation, and games. 
                     Traditional dubbing techniques revise the video according to the generated audio for precise audio-visual temporal alignment, which are labor intensive and time-consuming. 
                     To release human effort, we propose a multi-modal multi-scale expressive speech synthesis method named M3TTS, which introduces an auxiliary video input to provide style embeddings. 
                     Specifically, M3TTS adopts the memory mechanism to bridge the heterogenous modalities and a multi-scale style modeling scheme to recover style characteristics at different scales. 
                     In addition, M3TTS can convert the style of speech by choosing different reference videos. 
                     We conduct extensive experiments on the public GRID corpus, where our proposed M3TTS can generate high-quality and video-aligned speech. 
-                    It also shows superior performance over the other comparable methods both subjectively and objectively. "
+                    It also shows superior performance over the other comparable methods both subjectively and objectively. 
                   </div>
 
                 </div>
@@ -415,7 +419,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                         
                         <video controls class="html-video">
 
-                          <source src="static/video_gt/4.mp4" type="video/mp4">
+                          <source src="video_gt/4.mp4" type="video/mp4">
                         <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                         </video>
                       GT
@@ -425,7 +429,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                       
                         <video controls class="html-video">
                       
-                          <source src="static/video_vocoder/4.mp4" type="video/mp4">
+                          <source src="video_vocoder/4.mp4" type="video/mp4">
                         <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt_mel/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                         </video>
 
@@ -437,7 +441,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                       
                         <video controls class="html-video">
                       
-                          <source src="static/video_mem/4.mp4" type="video/mp4">
+                          <source src="video_mem/4.mp4" type="video/mp4">
                         <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt_mel/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                         </video>
 
@@ -450,7 +454,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                       
                         <video controls class="html-video">
                       
-                          <source src="static/video_grid_concat/4.mp4" type="video/mp4">
+                          <source src="video_grid_concat/4.mp4" type="video/mp4">
                         <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt_mel/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                         </video>
 
@@ -462,7 +466,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                       
                         <video controls class="html-video">
                       
-                          <source src="static/video_grid_g/4.mp4" type="video/mp4">
+                          <source src="video_grid_g/4.mp4" type="video/mp4">
                         <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt_mel/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                         </video>
 
@@ -475,7 +479,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                       
                         <video controls class="html-video">
                       
-                          <source src="static/video_grid_l/4.mp4" type="video/mp4">
+                          <source src="video_grid_l/4.mp4" type="video/mp4">
                         <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt_mel/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                         </video>
 
@@ -488,7 +492,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                       
                         <video controls class="html-video">
                       
-                          <source src="static/video_grid_pure/4.mp4" type="video/mp4">
+                          <source src="video_grid_pure/4.mp4" type="video/mp4">
                         <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt_mel/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                         </video>
 
@@ -517,7 +521,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                           
                           <video controls class="html-video">
   
-                            <source src="static/video_gt/3.mp4" type="video/mp4">
+                            <source src="video_gt/3.mp4" type="video/mp4">
                           <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                           </video>
                         GT
@@ -527,7 +531,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                         
                           <video controls class="html-video">
                         
-                            <source src="static/video_vocoder/3.mp4" type="video/mp4">
+                            <source src="video_vocoder/3.mp4" type="video/mp4">
                           <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt_mel/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                           </video>
   
@@ -539,7 +543,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                         
                           <video controls class="html-video">
                         
-                            <source src="static/video_mem/3.mp4" type="video/mp4">
+                            <source src="video_mem/3.mp4" type="video/mp4">
                           <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt_mel/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                           </video>
   
@@ -552,7 +556,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                         
                           <video controls class="html-video">
                         
-                            <source src="static/video_grid_concat/3.mp4" type="video/mp4">
+                            <source src="video_grid_concat/3.mp4" type="video/mp4">
                           <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt_mel/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                           </video>
   
@@ -564,7 +568,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                         
                           <video controls class="html-video">
                         
-                            <source src="static/video_grid_g/3.mp4" type="video/mp4">
+                            <source src="video_grid_g/3.mp4" type="video/mp4">
                           <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt_mel/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                           </video>
   
@@ -577,7 +581,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                         
                           <video controls class="html-video">
                         
-                            <source src="static/video_grid_l/3.mp4" type="video/mp4">
+                            <source src="video_grid_l/3.mp4" type="video/mp4">
                           <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt_mel/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                           </video>
   
@@ -590,7 +594,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                         
                           <video controls class="html-video">
                         
-                            <source src="static/video_grid_pure/3.mp4" type="video/mp4">
+                            <source src="video_grid_pure/3.mp4" type="video/mp4">
                           <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt_mel/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                           </video>
   
@@ -618,7 +622,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                             
                             <video controls class="html-video">
     
-                              <source src="static/video_gt/2.mp4" type="video/mp4">
+                              <source src="video_gt/2.mp4" type="video/mp4">
                             <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                             </video>
                           GT
@@ -628,7 +632,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                           
                             <video controls class="html-video">
                           
-                              <source src="static/video_vocoder/2.mp4" type="video/mp4">
+                              <source src="video_vocoder/2.mp4" type="video/mp4">
                             <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt_mel/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                             </video>
     
@@ -640,7 +644,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                           
                             <video controls class="html-video">
                           
-                              <source src="static/video_mem/2.mp4" type="video/mp4">
+                              <source src="video_mem/2.mp4" type="video/mp4">
                             <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt_mel/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                             </video>
     
@@ -653,7 +657,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                           
                             <video controls class="html-video">
                           
-                              <source src="static/video_grid_concat/2.mp4" type="video/mp4">
+                              <source src="video_grid_concat/2.mp4" type="video/mp4">
                             <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt_mel/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                             </video>
     
@@ -665,7 +669,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                           
                             <video controls class="html-video">
                           
-                              <source src="static/video_grid_g/2.mp4" type="video/mp4">
+                              <source src="video_grid_g/2.mp4" type="video/mp4">
                             <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt_mel/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                             </video>
     
@@ -678,7 +682,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                           
                             <video controls class="html-video">
                           
-                              <source src="static/video_grid_l/2.mp4" type="video/mp4">
+                              <source src="video_grid_l/2.mp4" type="video/mp4">
                             <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt_mel/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                             </video>
     
@@ -691,7 +695,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                           
                             <video controls class="html-video">
                           
-                              <source src="static/video_grid_pure/2.mp4" type="video/mp4">
+                              <source src="video_grid_pure/2.mp4" type="video/mp4">
                             <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt_mel/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                             </video>
     
@@ -720,7 +724,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                               
                               <video controls class="html-video">
       
-                                <source src="static/video_gt/1.mp4" type="video/mp4">
+                                <source src="video_gt/1.mp4" type="video/mp4">
                               <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                               </video>
                             GT
@@ -730,7 +734,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                             
                               <video controls class="html-video">
                             
-                                <source src="static/video_vocoder/1.mp4" type="video/mp4">
+                                <source src="video_vocoder/1.mp4" type="video/mp4">
                               <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt_mel/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                               </video>
       
@@ -742,7 +746,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                             
                               <video controls class="html-video">
                             
-                                <source src="static/video_mem/1.mp4" type="video/mp4">
+                                <source src="video_mem/1.mp4" type="video/mp4">
                               <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt_mel/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                               </video>
       
@@ -755,7 +759,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                             
                               <video controls class="html-video">
                             
-                                <source src="static/video_grid_concat/1.mp4" type="video/mp4">
+                                <source src="video_grid_concat/1.mp4" type="video/mp4">
                               <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt_mel/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                               </video>
       
@@ -767,7 +771,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                             
                               <video controls class="html-video">
                             
-                                <source src="static/video_grid_g/1.mp4" type="video/mp4">
+                                <source src="video_grid_g/1.mp4" type="video/mp4">
                               <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt_mel/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                               </video>
       
@@ -780,7 +784,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                             
                               <video controls class="html-video">
                             
-                                <source src="static/video_grid_l/1.mp4" type="video/mp4">
+                                <source src="video_grid_l/1.mp4" type="video/mp4">
                               <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt_mel/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                               </video>
       
@@ -793,7 +797,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                             
                               <video controls class="html-video">
                             
-                                <source src="static/video_grid_pure/1.mp4" type="video/mp4">
+                                <source src="video_grid_pure/1.mp4" type="video/mp4">
                               <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt_mel/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                               </video>
       
@@ -820,7 +824,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                               
                               <video controls class="html-video">
       
-                                <source src="static/video_gt/0.mp4" type="video/mp4">
+                                <source src="video_gt/0.mp4" type="video/mp4">
                               <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                               </video>
                             GT
@@ -830,7 +834,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                             
                               <video controls class="html-video">
                             
-                                <source src="static/video_vocoder/0.mp4" type="video/mp4">
+                                <source src="video_vocoder/0.mp4" type="video/mp4">
                               <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt_mel/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                               </video>
       
@@ -842,7 +846,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                             
                               <video controls class="html-video">
                             
-                                <source src="static/video_mem/0.mp4" type="video/mp4">
+                                <source src="video_mem/0.mp4" type="video/mp4">
                               <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt_mel/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                               </video>
       
@@ -855,7 +859,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                             
                               <video controls class="html-video">
                             
-                                <source src="static/video_grid_concat/0.mp4" type="video/mp4">
+                                <source src="video_grid_concat/0.mp4" type="video/mp4">
                               <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt_mel/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                               </video>
       
@@ -867,7 +871,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                             
                               <video controls class="html-video">
                             
-                                <source src="static/video_grid_g/0.mp4" type="video/mp4">
+                                <source src="video_grid_g/0.mp4" type="video/mp4">
                               <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt_mel/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                               </video>
       
@@ -880,7 +884,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                             
                               <video controls class="html-video">
                             
-                                <source src="static/video_grid_l/0.mp4" type="video/mp4">
+                                <source src="video_grid_l/0.mp4" type="video/mp4">
                               <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt_mel/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                               </video>
       
@@ -893,7 +897,7 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
                             
                               <video controls class="html-video">
                             
-                                <source src="static/video_grid_pure/0.mp4" type="video/mp4">
+                                <source src="video_grid_pure/0.mp4" type="video/mp4">
                               <!-- <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="videos/chem/gt_mel/10.mp4">download it</a> and watch it with your favorite video player!</p> -->
                               </video>
       
@@ -932,7 +936,9 @@ We can see that Neural Dubber outperforms FastSpeech 2 by a significant margin i
              <li>Y. Ren, et al., "FastSpeech 2: Fast and High-Quality End-to-End Text to Speech," in <i>Proc. ICLR</i>, 2021.</li>
           </ol>
           </p>       
-        
+          <br>
+          <br>
+
       
     </body>
 
